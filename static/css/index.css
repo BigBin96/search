@@ -1,0 +1,93 @@
+h1{
+	margin-left: 120px;
+	font-size: 50px;
+	letter-spacing: 12px;
+}
+
+a{
+	color: #00CCCC;
+}
+
+.search >.user{
+	position: absolute;
+	right: 100px;
+	top: 45px;
+	font-size: 14px;
+}
+
+.search >.user>p>a{
+	margin-left: 20px;
+}
+
+
+.search >.search-bar{
+	position: relative;
+	width: 28%;
+	margin: 0 auto;
+	height: 36px;
+	border: 3px solid #00CCCC;
+	border-radius: 3px;
+}
+
+.search >.search-bar >input{
+	border: 0;
+	outline: 0;
+	line-height: 36px;
+	height: 36px;
+	text-indent: 12px;
+	padding-right: 100px;
+	color: #333333;
+	width: 100%;
+	box-sizing: border-box;
+}
+.search >.search-bar >button{
+	outline: 0;
+	border: 0;
+	background: #00CCCC;
+	width: 90px;
+	height: 36px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 15px;
+	letter-spacing: 4px;
+	text-indent: 4px;
+	color: #fff;
+	cursor: pointer;
+}
+
+h2{
+	padding-left: 120px;
+	font-size: 28px;
+	letter-spacing: 8px;
+	font-family: xzJt;
+	border-bottom: 2px solid #00CCCC;
+	margin-top: 40px;
+	padding-bottom: 10px;
+}
+
+#sc_result{
+	width: 80%;
+	margin: 40px auto;
+}
+
+#sc_result >li{
+	height: 36px;
+	line-height: 36px;
+	padding: 0 20px;
+	list-style: none;
+}
+
+#sc_result >li:nth-child(even){
+	background: #EEEEEE;
+	color: #444444;
+}
+
+#sc_result >li:nth-child(odd){
+	background: #CCCCCC;
+	color: #FFFFFF;
+}
+
+#tip{
+	text-align: center;
+}

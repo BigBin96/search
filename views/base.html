@@ -1,0 +1,44 @@
+{# base骨架 #}
+{% block base %}
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+			<link href="../static/images/favicon.ico" rel="Shortcut Icon" type="image/x-icon">
+			<link rel="stylesheet" href="../static/css/publick.css">
+			{% block link %}
+				{# link文件 #}
+			{% endblock %}
+			<title>Search-{{title}}</title>
+		</head>
+		<body>
+			{# 头部 #}
+			<div class="header">
+				{% block header %}
+				{% endblock %}
+			</div>
+			
+			{# 主体内容 #}
+			<div class="body">
+				{% block body %}
+				{% endblock %}
+			</div>
+			
+			{# 页脚 #}
+			<div class="footer">
+				{% block footer %}
+					<p>
+						网械平台备字[2018]第00002号
+						© 2003-2019 TMALL.COM 版权所有
+					</p>
+				{% endblock %}
+			</div>
+			
+			{% block script %}
+				<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+				<script type="text/javascript" src="../static/js/main.js"></script>
+			{% endblock %}
+		</body>
+	</html>
+{% endblock %}

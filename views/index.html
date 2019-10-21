@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+	{% block link %}
+		<link rel="stylesheet" href="../static/css/index.css">
+	{% endblock %}
+
+	{% block header %}
+		<h1>首页</h1>
+		<div class="search">
+			<div class="user">
+				{% if username %}
+					<p>Welcome，{{username}} <a href="/login" onclick="onlogout()">退出</a></p>
+				{% else %}
+					<p>
+						请<a href="/login">登录</a>，还没有账号？点这里<a href="/register">注册</a>
+					</p>
+				{% endif %}
+			</div>
+			
+			<form class="search-bar">
+				<input type="text" name="" id="search" value="" placeholder="输入关键字..." />
+				<button type="button" onclick="onsearchb()">搜索</button>
+			</form>
+		</div>
+	{% endblock %}
+
+	{% block body %}
+		<h2>搜索结果</h2>
+		{% if buyoff %}
+		<ul id='sc_result'>
+			{% for item in buyoff %}
+			<li>
+				<span>{{item.type}}</span><span>{{item.brand}}</span><span>{{item.txt}}</span><span>￥{{item.price}}</span>
+			</li>
+			{% endfor %}
+		</ul>
+		{% else %}
+			<p id='tip'>没有您要找的结果！</p>
+		{% endif %}
+	{% endblock %} 

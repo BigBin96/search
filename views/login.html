@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+	{% block link %}
+		<link rel="stylesheet" href="../static/css/login.css">
+	{% endblock %}
+
+	{% block header %}
+		<h1>登录</h1>
+	{% endblock %}
+
+	{% block body %}
+		<form class="login-bar">
+			<p>
+				<label>账号</label>
+				<input type="text" id="username"  />
+			</p>
+			<p>
+				<label>密码</label>
+				<input type="password" id="password" />
+			</p>
+			<button class="submit-btn" type="submit" onclick="onlogin(event)">登录</button>
+			<label>没有账号？<a href="/register">注册</a></label>
+		</form>
+	{% endblock %}

@@ -1,0 +1,63 @@
+h1{
+	text-align: center;
+	font-size: 50px;
+	letter-spacing: 12px;
+	text-indent: 12px;
+}
+
+.login-bar{
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.login-bar >p{
+	position: relative;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.login-bar >p>label{
+	position: absolute;
+	left: 8px;
+	letter-spacing: 10px;
+	height: 42px;
+	line-height: 42px;
+}
+
+.login-bar >p input{
+	width: 100%;
+	outline: 0;
+	border: 0;
+	height: 42px;
+	line-height: 42px;
+	border-bottom: 2px solid #00CCCC;
+	padding-left: 76px;
+	padding-right: 12px;
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+.submit-btn{
+	display: block;
+	width: 76%;
+	height: 32px;
+	line-height: 32px;
+	font-size: 16px;
+	text-align: center;
+	letter-spacing: 20px;
+	text-indent: 20px;
+	margin: 80px auto 20px;
+	outline: 0;
+	border: 0;
+	background: #00CCCC;
+	border-radius: 5px;
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.submit-btn:hover{
+	background: #00CC99;
+}
