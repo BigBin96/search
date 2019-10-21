@@ -6,23 +6,6 @@ module.exports = async (ctx,next) => {
 	
 	var selectsql = `select * from search where type like '%${data.search_word}%' or brand like '%${data.search_word}%' or txt like '%${data.search_word}%'`;
 	
-	ctx.render('index.html',{
-		username:'Atlan',
-		title:'首页aaaaaaaaaa',
-		buyoff: [{
-			type: 1231,
-			brand: 132131,
-			txt:212313,
-			price:127
-		},{
-			type: 1231,
-			brand: 132131,
-			txt:212313,
-			price:127
-		}]
-	});
-	
-	
 	await dbquery(selectsql)
 		.then((result) => {
 			if(result.length > 0){	//	查到了就返回数据
@@ -38,7 +21,7 @@ module.exports = async (ctx,next) => {
 					title:'首页aa',
 					buyoff: jsondata
 				});
-				console.log(ctx.body)
+				console.log(jsondata)
 			} else {	//没查到就返回0
 				ctx.response.body = 0;
 			}
